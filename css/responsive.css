@@ -1,0 +1,336 @@
+/* ============================================
+   RESPONSIVE DESIGN ENHANCEMENTS
+   Mobile-First Approach for Portfolio Site
+   ============================================ */
+
+/* ===============================
+   BASE RESPONSIVE FIXES
+   =============================== */
+
+/* Ensure images never overflow */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Prevent horizontal scroll */
+body {
+    overflow-x: hidden;
+}
+
+/* Better box-sizing for all elements */
+* {
+    box-sizing: border-box;
+}
+
+/* ===============================
+   EXTRA SMALL DEVICES (320px - 479px)
+   Mobile Phones (Portrait)
+   =============================== */
+@media (max-width: 479px) {
+
+    /* Typography */
+    .cover-v1 .heading {
+        font-size: 2rem !important;
+        line-height: 1.2;
+    }
+
+    .cover-v1 .subheading {
+        font-size: 18px !important;
+        line-height: 1.4;
+    }
+
+    .heading-h2 {
+        font-size: 1.8rem !important;
+    }
+
+    h3 {
+        font-size: 1.2rem !important;
+    }
+
+    p {
+        font-size: 14px !important;
+        line-height: 1.6;
+    }
+
+    /* Navigation */
+    .unslate_co--site-nav {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    .unslate_co--site-logo {
+        font-size: 1.3rem !important;
+    }
+
+    /* Hero Section */
+    .cover-v1 .container,
+    .cover-v1 .container>.row {
+        min-height: 500px !important;
+    }
+
+    /* Portfolio Grid */
+    .portfolio-wrapper .item {
+        margin-bottom: 20px;
+    }
+
+    /* Services Cards */
+    .feature-v1 {
+        margin-bottom: 30px;
+        padding: 20px 15px;
+    }
+
+    .feature-v1 h3 {
+        font-size: 1.1rem !important;
+        margin-top: 15px;
+    }
+
+    .feature-v1 p {
+        font-size: 13px !important;
+    }
+
+    /* Skills Counter */
+    .counter-v1 {
+        margin-bottom: 30px;
+    }
+
+    .counter-v1 .number {
+        font-size: 2rem !important;
+    }
+
+    .counter-v1 .counter-label {
+        font-size: 13px !important;
+    }
+
+    /* Contact Form */
+    .form-control {
+        font-size: 14px !important;
+        padding: 12px 15px !important;
+    }
+
+    .btn {
+        padding: 12px 20px !important;
+        font-size: 10px !important;
+    }
+
+    /* Sections Padding */
+    .unslate_co--section {
+        padding-top: 50px !important;
+        padding-bottom: 50px !important;
+    }
+
+    /* Footer */
+    .unslate_co--footer {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .footer-site-social li {
+        display: inline-block;
+        margin: 0 10px;
+    }
+}
+
+/* ===============================
+   SMALL DEVICES (480px - 767px)
+   Mobile Phones (Landscape) & Small Tablets
+   =============================== */
+@media (min-width: 480px) and (max-width: 767px) {
+
+    /* Typography */
+    .cover-v1 .heading {
+        font-size: 2.5rem !important;
+    }
+
+    .cover-v1 .subheading {
+        font-size: 20px !important;
+    }
+
+    .heading-h2 {
+        font-size: 2rem !important;
+    }
+
+    /* Hero Section */
+    .cover-v1 .container,
+    .cover-v1 .container>.row {
+        min-height: 550px !important;
+    }
+
+    /* Portfolio Grid - 2 columns */
+    .portfolio-wrapper .item {
+        width: 50%;
+    }
+
+    /* Services - 2 columns */
+    .feature-v1 {
+        padding: 25px 20px;
+    }
+}
+
+/* ===============================
+   MEDIUM DEVICES (768px - 991px)
+   Tablets (iPad, etc)
+   =============================== */
+@media (min-width: 768px) and (max-width: 991px) {
+
+    /* Typography */
+    .cover-v1 .heading {
+        font-size: 3.5rem !important;
+    }
+
+    .cover-v1 .subheading {
+        font-size: 26px !important;
+    }
+
+    /* Navigation */
+    .unslate_co--site-nav .site-nav-ul>li>a {
+        font-size: 13px;
+        padding: 8px 5px;
+    }
+
+    /* Portfolio Grid - 2 columns optimal */
+    .portfolio-wrapper .isotope-item {
+        width: 50% !important;
+    }
+
+    /* Services - 2 columns */
+    .feature-v1 {
+        margin-bottom: 30px;
+    }
+
+    /* About Section */
+    .col-lg-7 {
+        margin-bottom: 30px;
+    }
+
+    /* Contact Form */
+    .form-group {
+        margin-bottom: 20px;
+    }
+}
+
+/* ===============================
+   LARGE DEVICES (992px - 1199px)
+   Small Desktops & Large Tablets
+   =============================== */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+    /* Container adjustments */
+    .container {
+        max-width: 960px;
+    }
+
+    /* Typography fine-tuning */
+    .cover-v1 .heading {
+        font-size: 4rem !important;
+    }
+
+    /* Portfolio - 3 columns */
+    .portfolio-wrapper .isotope-item {
+        width: 33.333% !important;
+    }
+}
+
+/* ===============================
+   EXTRA LARGE DEVICES (1200px+)
+   Desktop & Large Screens
+   =============================== */
+@media (min-width: 1200px) {
+
+    /* Ensure optimal container width */
+    .container {
+        max-width: 1140px;
+    }
+}
+
+/* ===============================
+   UTILITY CLASSES FOR RESPONSIVENESS
+   =============================== */
+
+/* Hide on mobile */
+@media (max-width: 767px) {
+    .hide-mobile {
+        display: none !important;
+    }
+}
+
+/* Hide on tablet */
+@media (min-width: 768px) and (max-width: 991px) {
+    .hide-tablet {
+        display: none !important;
+    }
+}
+
+/* Hide on desktop */
+@media (min-width: 992px) {
+    .hide-desktop {
+        display: none !important;
+    }
+}
+
+/* ===============================
+   TOUCH DEVICE OPTIMIZATIONS
+   =============================== */
+@media (hover: none) and (pointer: coarse) {
+
+    /* Increase touch targets */
+    a,
+    button,
+    .btn {
+        min-height: 44px;
+        min-width: 44px;
+        padding: 12px 20px;
+    }
+
+    /* Remove hover effects on touch devices */
+    .social-link-card:hover {
+        transform: none;
+    }
+
+    /* Make clickable areas larger */
+    .portfolio-item .overlay {
+        opacity: 0.9;
+    }
+}
+
+/* ===============================
+   LANDSCAPE ORIENTATION FIXES
+   =============================== */
+@media (max-height: 500px) and (orientation: landscape) {
+
+    /* Reduce hero section height on landscape mobile */
+    .cover-v1 .container,
+    .cover-v1 .container>.row {
+        min-height: 400px !important;
+    }
+
+    /* Hide mouse scroll indicator on short screens */
+    .mouse-wrap {
+        display: none;
+    }
+}
+
+/* ===============================
+   ACCESSIBILITY IMPROVEMENTS
+   =============================== */
+
+/* Focus states for keyboard navigation */
+@media (min-width: 768px) {
+
+    a:focus,
+    button:focus,
+    input:focus,
+    textarea:focus {
+        outline: 2px solid #D63447;
+        outline-offset: 2px;
+    }
+}
+
+/* Reduce motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}

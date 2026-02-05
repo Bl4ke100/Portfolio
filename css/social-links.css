@@ -91,7 +91,66 @@
 }
 
 /* Responsive adjustments */
-@media (max-width: 768px) {
+
+/* Extra Small Devices (360px and below) */
+@media (max-width: 360px) {
+    .social-link-card {
+        padding: 15px 10px;
+    }
+
+    .social-icon-wrap {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 12px;
+    }
+
+    .social-icon-wrap span,
+    .social-icon-wrap img {
+        font-size: 24px;
+        width: 20px !important;
+        height: 20px !important;
+    }
+
+    .social-link-card h4 {
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+
+    .social-link-card p {
+        font-size: 11px;
+    }
+}
+
+/* Small Mobile Devices (361px - 480px) */
+@media (min-width: 361px) and (max-width: 480px) {
+    .social-link-card {
+        padding: 18px 12px;
+    }
+
+    .social-icon-wrap {
+        width: 55px;
+        height: 55px;
+        margin-bottom: 14px;
+    }
+
+    .social-icon-wrap span,
+    .social-icon-wrap img {
+        font-size: 26px;
+        width: 22px !important;
+        height: 22px !important;
+    }
+
+    .social-link-card h4 {
+        font-size: 15px;
+    }
+
+    .social-link-card p {
+        font-size: 11px;
+    }
+}
+
+/* Mobile Devices (481px - 767px) */
+@media (min-width: 481px) and (max-width: 767px) {
     .social-link-card {
         padding: 20px 15px;
     }
@@ -102,8 +161,11 @@
         margin-bottom: 15px;
     }
 
-    .social-icon-wrap span {
+    .social-icon-wrap span,
+    .social-icon-wrap img {
         font-size: 28px;
+        width: 24px !important;
+        height: 24px !important;
     }
 
     .social-link-card h4 {
@@ -112,5 +174,54 @@
 
     .social-link-card p {
         font-size: 12px;
+    }
+}
+
+/* Tablets (768px - 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+    .social-link-card {
+        padding: 25px 18px;
+    }
+
+    .social-icon-wrap {
+        width: 70px;
+        height: 70px;
+        margin-bottom: 18px;
+    }
+
+    .social-icon-wrap span,
+    .social-icon-wrap img {
+        font-size: 32px;
+        width: 26px !important;
+        height: 26px !important;
+    }
+
+    .social-link-card h4 {
+        font-size: 18px;
+    }
+
+    .social-link-card p {
+        font-size: 13px;
+    }
+}
+
+/* Touch device optimization */
+@media (hover: none) and (pointer: coarse) {
+    .social-link-card {
+        min-height: 120px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    /* Disable hover transform on touch to prevent issues */
+    .social-link-card:hover {
+        transform: none;
+    }
+
+    /* Keep visual feedback but without transform */
+    .social-link-card:active {
+        opacity: 0.8;
+        border-color: #D63447;
     }
 }
